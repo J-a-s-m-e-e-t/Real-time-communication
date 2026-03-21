@@ -13,7 +13,7 @@ const PORT=process.env.PORT;
 const _dirname=path.resolve();
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://communify-chat-vcs.vercel.app",
     credentials:true  //allow frontend to send cookies
 })
 );
@@ -38,3 +38,6 @@ app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`)
     connectDB();
 });
+
+
+//origin:"http://localhost:5173"
