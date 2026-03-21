@@ -13,7 +13,7 @@ const PORT=process.env.PORT;
 const _dirname=path.resolve();
 
 app.use(cors({
-    origin:["https://communify-chat-vcs.vercel.app","http://localhost:5173"],
+    origin:process.env.CLIENT_URL,
     credentials:true  //allow frontend to send cookies
 })
 );
