@@ -40,8 +40,9 @@ const Navbar = () => {
             </Link>
           </div>
           <ThemeSelector />
-          <div className="avatar">
-            <div className="w-9 rounded-full">
+          <Link to="/onboarding">
+          <div className="avatar cursor-pointer">
+            <div className="w-9 rounded-full hover:ring hover:ring-primary transition">
               <img
                 src={authUser?.profilePic}
                 alt="User Avatar"
@@ -49,6 +50,7 @@ const Navbar = () => {
               />
             </div>
           </div>
+          </Link>
           {/* logout btn */}
           <button className="btn btn-ghost btn-circle" onClick={logoutMutation}>
             <LogOutIcon className="h-6 w-6 text-base-content opacity-70" />
