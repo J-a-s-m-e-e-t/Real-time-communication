@@ -8,7 +8,7 @@ import {
 } from "../lib/api";
 import { CheckCircleIcon, MapIcon, MapPinIcon, UserPlusIcon, UsersIcon } from "lucide-react";
 import NoFriendsFound from "../component/NoFriendsFound";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import FriendCard, { getLanguageFlag } from "../component/FriendCard";
 import { capitialize } from "../lib/utils";
 
