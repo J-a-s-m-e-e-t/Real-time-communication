@@ -41,7 +41,7 @@ const ChatPage = () => {
           await client.connectUser({
             id:authUser._id,
             name:authUser.fullName,
-            img: authUser.profilePic
+            image: authUser.profilePic
           },tokenData.token)
           const channelId=[authUser._id,targetUserId].sort().join("-");
           const currChannel=client.channel("messaging",channelId,{

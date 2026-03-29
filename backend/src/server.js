@@ -14,7 +14,7 @@ const _dirname=path.resolve();
 
 app.use(cors({
     origin:
-    ["https://communify-vc-chat.vercel.app"]
+    ["https://communify-vc-chat.vercel.app","http://localhost:5173"]
     ,
     credentials:true  //allow frontend to send cookies
 })
