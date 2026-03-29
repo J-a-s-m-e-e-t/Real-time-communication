@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router";
 import useAuthUser from "../hooks/useAuthUser";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { BellIcon, LogOutIcon, ShipWheelIcon } from "lucide-react";

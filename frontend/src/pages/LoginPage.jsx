@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query"
 import { useState } from "react"
 import { login } from "../lib/api";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { ShipWheelIcon } from "lucide-react";
 import useLogin from "../hooks/useLogin";
 
