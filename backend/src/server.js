@@ -14,7 +14,7 @@ const _dirname=path.resolve();
 
 app.use(cors({
     origin:
-    [import.process.env.CLIENT_URI,"http://localhost:5173"]
+    [process.env.CLIENT_URI,"http://localhost:5173"]
     ,
     credentials:true  //allow frontend to send cookies
 })
